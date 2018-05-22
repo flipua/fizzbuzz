@@ -1,6 +1,6 @@
 <?php
-function solutionFizzBuzz ($fizz, $buzz, $len) {
-$i = 1;
+function solutionFizzBuzz ($fizzbuzz, $buzz, $len) {
+$i = 3;
 while ($i < $len){
 if ($i % $fizz == 0 && $i % $buzz == 0) {
   echo "FB ";
