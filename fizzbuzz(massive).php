@@ -1,14 +1,14 @@
 <?php
-function massivefizzbuzz($x) {
+function massivefizzbuzz($a) {
 global $fizz, $buzz;
-if ( $x % $fizz == 0 && $x % $buzz == 0) {
+if ( $a % $fizz == 0 && $a % $buzz == 0) {
   return "FB ";
-}elseif ( $x % $buzz == 0) {
+}elseif ( $a % $buzz == 0) {
   return "B ";
-}elseif ( $x % $fizz == 0) {
+}elseif ( $a % $fizz == 0) {
   return "F ";
 }else {
-  return  "$x "; }
+  return  "$a "; }
 }
 $file_handle = fopen ("C:/php/fizzbuzz.txt", "r+" );
 while (!feof ($file_handle)){
